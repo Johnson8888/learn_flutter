@@ -21,4 +21,8 @@ void main() {
   if (lineCount == null) {
     print("line is null");
   }
+  final name = 'Bob'
+  final String nickname = 'Bobby'
+  /// 运行下面这句会报错
+  //name = 'Alice'; // Error: a final variable can only be set once.
 }
