@@ -1,6 +1,12 @@
+/*
+ * @Author: 弗拉德
+ * @Date: 2020-11-11 08:28:24
+ * @LastEditTime: 2020-11-18 14:06:28
+ * @Support: http://fulade.me
+ */
 void main() {
   /// 初始化一个字符串
-  var name = 'Fulade';
+  // var name = 'Fulade';
 
   /// Int类型
   var year = 1987;
@@ -21,8 +27,12 @@ void main() {
   if (lineCount == null) {
     print("line is null");
   }
-  final name = 'Bob'
-  final String nickname = 'Bobby'
-  /// 运行下面这句会报错
-  //name = 'Alice'; // Error: a final variable can only be set once.
+
+  final name = 'Bob';
+  final String nickname = 'Bobby';
+  // 运行下面这句会报错
+  // name = 'Alice'; // Error: a final variable can only be set once.
+
+  const i = 100;
+  const double j = i * 1.01;
 }
