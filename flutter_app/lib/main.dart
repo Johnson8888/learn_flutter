@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'routes/index.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +27,12 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: "/",
+      routes: {
+        // "calculator": (context) => Calculator(),
+        "TextDemoPage": (context) => TextDemoPage(),
+        "/": (context) => MainPage()
+      },
     );
   }
 }
