@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
-        // "calculator": (context) => Calculator(),
         "TextDemoPage": (context) => TextDemoPage(),
+        "RaisedButtonDemoPage": (context) => RaisedButtonDemoPage(),
         "/": (context) => MainPage()
       },
     );

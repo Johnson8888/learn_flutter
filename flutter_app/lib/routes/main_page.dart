@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-12-15 20:51:56
- * @LastEditTime: 2020-12-16 09:09:04
+ * @LastEditTime: 2020-12-17 15:31:59
  * @Support: http://fulade.me
  */
 
@@ -14,7 +14,8 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   var demoList = [
-    {"title": "Text", "route": "TextDemoPage"}
+    {"title": "Text", "route": "TextDemoPage"},
+    {"title": "RaisedButton", "route": "RaisedButtonDemoPage"}
   ];
   @override
   Widget build(BuildContext context) {
