@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-12-17 14:34:54
- * @LastEditTime: 2020-12-17 16:14:40
+ * @LastEditTime: 2020-12-18 11:03:43
  * @Support: http://fulade.me
  */
 import 'package:flutter/material.dart';
@@ -75,6 +75,11 @@ class _RaisedButtonDemoPage extends State<RaisedButtonDemoPage> {
             child: Text("阴影设置20"),
             onPressed: () {},
             elevation: 20.0,
+          ),
+          RaisedButton.icon(
+            onPressed: () {},
+            icon: Icon(Icons.local_cafe),
+            label: Text("RaisedButton"),
           ),
         ],
       ),

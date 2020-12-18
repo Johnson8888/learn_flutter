@@ -69,6 +69,11 @@ class _FlatButtonDemoPageState extends State<FlatButtonDemoPage> {
               print("长按回调");
             },
           ),
+          FlatButton.icon(
+            onPressed: () {},
+            icon: Icon(Icons.local_cafe),
+            label: Text("FlatButton"),
+          ),
         ],
       ),
     );

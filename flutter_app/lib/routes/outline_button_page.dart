@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-12-17 20:32:59
- * @LastEditTime: 2020-12-17 20:51:24
+ * @LastEditTime: 2020-12-18 11:03:12
  * @Support: http://fulade.me
  */
 import 'package:flutter/material.dart';
@@ -63,6 +63,11 @@ class _OutlineButtonDemoePageState extends State<OutlineButtonDemoePage> {
             onLongPress: () {
               print("长按回调");
             },
+          ),
+          OutlineButton.icon(
+            onPressed: () {},
+            icon: Icon(Icons.local_cafe),
+            label: Text("OutlineButton"),
           ),
         ],
       ),
