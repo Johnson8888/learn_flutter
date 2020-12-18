@@ -29,8 +29,10 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: "/",
       routes: {
+        "OutlineButtonDemoePage": (context) => OutlineButtonDemoePage(),
         "TextDemoPage": (context) => TextDemoPage(),
         "RaisedButtonDemoPage": (context) => RaisedButtonDemoPage(),
+        "FlatButtonDemoPage": (context) => FlatButtonDemoPage(),
         "/": (context) => MainPage()
       },
     );
