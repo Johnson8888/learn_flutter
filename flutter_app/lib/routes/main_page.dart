@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-12-15 20:51:56
- * @LastEditTime: 2020-12-18 09:43:59
+ * @LastEditTime: 2020-12-20 14:53:16
  * @Support: http://fulade.me
  */
 
@@ -18,7 +18,8 @@ class _MainPageState extends State<MainPage> {
     {"title": "RaisedButton", "route": "RaisedButtonDemoPage"},
     {"title": "FlatButton", "route": "FlatButtonDemoPage"},
     {"title": "OutlineButton", "route": "OutlineButtonDemoePage"},
-    {"title": "Icon Buttton", "route": "IconButtonDemoPage"}
+    {"title": "Icon Buttton", "route": "IconButtonDemoPage"},
+    {"title": "Container", "route": "ContainerDemoPage"},
   ];
   @override
   Widget build(BuildContext context) {
