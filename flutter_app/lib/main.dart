@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'routes/index.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +27,15 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => MainPage(),
+        "TextDemoPage": (context) => TextDemoPage(),
+        "RaisedButtonDemoPage": (context) => RaisedButtonDemoPage(),
+        "FlatButtonDemoPage": (context) => FlatButtonDemoPage(),
+        "OutlineButtonDemoePage": (context) => OutlineButtonDemoePage(),
+        "IconButtonDemoPage": (context) => IconButtonDemoPage()
+      },
     );
   }
 }
