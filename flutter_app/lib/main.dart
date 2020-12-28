@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         "FlatButtonDemoPage": (context) => FlatButtonDemoPage(),
         "OutlineButtonDemoePage": (context) => OutlineButtonDemoePage(),
         "IconButtonDemoPage": (context) => IconButtonDemoPage(),
-        "ContainerPage": (context) => ContainerDemoPage(),
+        "ContainerDemoPage": (context) => ContainerDemoPage(),
       },
     );
   }
