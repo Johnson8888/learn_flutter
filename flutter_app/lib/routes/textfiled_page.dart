@@ -4,6 +4,7 @@
  * @LastEditTime: 2021-01-07 17:52:34
  * @Support: http://fulade.me
  */
+
 import 'package:flutter/material.dart';
 
 class TextFiledDemoPage extends StatefulWidget {
@@ -21,8 +22,8 @@ class _TextFiledDemoPageState extends State<TextFiledDemoPage> {
         backgroundColor: Colors.blue,
       ),
       body: ListView.builder(
-        itemCount: _createTextFiledList().length,
-        itemExtent: 60.0, //强制高度为50.0
+        itemCount: 12,
+        itemExtent: 60.0, //强制高度为60.0
         padding: EdgeInsets.all(10),
         itemBuilder: (BuildContext context, int index) {
           return _createTextFiledList()[index];
@@ -33,10 +34,11 @@ class _TextFiledDemoPageState extends State<TextFiledDemoPage> {
 
   /// 生成当前 TextFiled 的列表连接
   List _createTextFiledList() {
+    TextEditingController controller = TextEditingController();
     return [
       TextField(
         decoration: InputDecoration(
-          labelText: "Normal",
+          labelText: "最基本的的TextFiled",
         ),
       ),
       TextField(
@@ -73,8 +75,15 @@ class _TextFiledDemoPageState extends State<TextFiledDemoPage> {
       TextField(
         decoration: InputDecoration(
           labelText: "下方带有辅助提示的TextFiled",
-          helperText: "辅助提示",
+          helperText: "我是辅助提示",
           helperStyle: TextStyle(color: Colors.red),
+        ),
+      ),
+      TextField(
+        decoration: InputDecoration(
+          labelText: "点击后会有提示",
+          hintText: "我是点击后的提示",
+          hintStyle: TextStyle(color: Colors.red),
         ),
       ),
       TextField(
@@ -89,6 +98,31 @@ class _TextFiledDemoPageState extends State<TextFiledDemoPage> {
           focusedBorder: UnderlineInputBorder(
             borderSide: BorderSide(color: Colors.red),
           ),
+        ),
+      ),
+      TextField(
+        controller: controller,
+        onChanged: (value) {
+          print("onChanged value = " + value);
+        },
+        onSubmitted: (value) {
+          print("onSubmitted value = " + value);
+        },
+        onEditingComplete: () {
+          print("onEditingComplete value = " + controller.text);
+        },
+        decoration: InputDecoration(
+          labelText: "输入事件监听",
+        ),
+      ),
+      TextField(
+        decoration: InputDecoration(
+          labelText: "键盘回收",
+          suffixIcon: IconButton(
+              icon: Icon(Icons.close),
+              onPressed: () {
+                FocusScope.of(context).requestFocus(FocusNode());
+              }),
         ),
       ),
     ];
