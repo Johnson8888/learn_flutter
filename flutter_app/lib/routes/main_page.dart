@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-12-15 20:51:56
- * @LastEditTime: 2021-01-07 14:29:00
+ * @LastEditTime: 2021-01-08 10:50:57
  * @Support: http://fulade.me
  */
 
@@ -21,7 +21,7 @@ class _MainPageState extends State<MainPage> {
     {"title": "Icon Buttton", "route": "IconButtonDemoPage"},
     {"title": "Container", "route": "ContainerDemoPage"},
     {"title": "StatefulWidget", "route": "StatefulWidgetDemoPage"},
-    {"title": "TextFiled", "route": "TextFiledDemoPage"}
+    {"title": "TextField", "route": "TextFieldDemoPage"}
   ];
   @override
   Widget build(BuildContext context) {

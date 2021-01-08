@@ -1,24 +1,24 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-01-07 13:31:11
- * @LastEditTime: 2021-01-07 17:52:34
+ * @LastEditTime: 2021-01-08 10:50:19
  * @Support: http://fulade.me
  */
 
 import 'package:flutter/material.dart';
 
-class TextFiledDemoPage extends StatefulWidget {
+class TextFieldDemoPage extends StatefulWidget {
   @override
-  _TextFiledDemoPageState createState() => _TextFiledDemoPageState();
+  _TextFieldDemoPageState createState() => _TextFieldDemoPageState();
 }
 
-class _TextFiledDemoPageState extends State<TextFiledDemoPage> {
+class _TextFieldDemoPageState extends State<TextFieldDemoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("TextFiled Demo"),
+        title: Text("TextField Demo"),
         backgroundColor: Colors.blue,
       ),
       body: ListView.builder(
@@ -26,19 +26,19 @@ class _TextFiledDemoPageState extends State<TextFiledDemoPage> {
         itemExtent: 60.0, //强制高度为60.0
         padding: EdgeInsets.all(10),
         itemBuilder: (BuildContext context, int index) {
-          return _createTextFiledList()[index];
+          return _createTextFieldList()[index];
         },
       ),
     );
   }
 
-  /// 生成当前 TextFiled 的列表连接
-  List _createTextFiledList() {
+  /// 生成当前 TextField 的列表连接
+  List _createTextFieldList() {
     TextEditingController controller = TextEditingController();
     return [
       TextField(
         decoration: InputDecoration(
-          labelText: "最基本的的TextFiled",
+          labelText: "最基本的的TextField",
         ),
       ),
       TextField(
@@ -74,7 +74,7 @@ class _TextFiledDemoPageState extends State<TextFiledDemoPage> {
       ),
       TextField(
         decoration: InputDecoration(
-          labelText: "下方带有辅助提示的TextFiled",
+          labelText: "下方带有辅助提示的TextField",
           helperText: "我是辅助提示",
           helperStyle: TextStyle(color: Colors.red),
         ),
