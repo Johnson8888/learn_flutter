@@ -12,4 +12,5 @@ export 'outline_button_page.dart';
 export 'icon_button_page.dart';
 export 'container_page.dart';
 export 'statefulwidget_page.dart';
-export 'textfiled_page.dart';
+export 'textfield_page.dart';
+export 'image_page.dart';

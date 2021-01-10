@@ -21,7 +21,8 @@ class _MainPageState extends State<MainPage> {
     {"title": "Icon Buttton", "route": "IconButtonDemoPage"},
     {"title": "Container", "route": "ContainerDemoPage"},
     {"title": "StatefulWidget", "route": "StatefulWidgetDemoPage"},
-    {"title": "TextField", "route": "TextFieldDemoPage"}
+    {"title": "TextField", "route": "TextFieldDemoPage"},
+    {"title": "Image", "route": "ImageDemoPage"},
   ];
   @override
   Widget build(BuildContext context) {
