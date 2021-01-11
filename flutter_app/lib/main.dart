@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         "IconButtonDemoPage": (context) => IconButtonDemoPage(),
         "ContainerDemoPage": (context) => ContainerDemoPage(),
         "StatefulWidgetDemoPage": (context) => StatefulWidgetDemoPage(),
-        "TextFiledDemoPage": (context) => TextFieldDemoPage(),
+        "TextFieldDemoPage": (context) => TextFieldDemoPage(),
       },
     );
   }
