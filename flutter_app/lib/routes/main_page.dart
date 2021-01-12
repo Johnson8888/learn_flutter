@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-12-15 20:51:56
- * @LastEditTime: 2021-01-08 10:50:57
+ * @LastEditTime: 2021-01-12 10:50:00
  * @Support: http://fulade.me
  */
 
@@ -23,6 +23,7 @@ class _MainPageState extends State<MainPage> {
     {"title": "StatefulWidget", "route": "StatefulWidgetDemoPage"},
     {"title": "TextField", "route": "TextFieldDemoPage"},
     {"title": "Image", "route": "ImageDemoPage"},
+    {"title": "Colum", "route": "ColumnDemoPage"}
   ];
   @override
   Widget build(BuildContext context) {
@@ -34,16 +35,17 @@ class _MainPageState extends State<MainPage> {
       ),
       body: ListView.builder(
         itemCount: demoList.length,
-        itemExtent: 60.0, //强制高度为50.0
+        itemExtent: 60.0,
         padding: EdgeInsets.all(10),
         itemBuilder: (BuildContext context, int index) {
           return FlatButton(
-              onPressed: () => _pushAction(index),
-              child: Card(
-                child: Center(
-                  child: Text(demoList[index]["title"]),
-                ),
-              ));
+            onPressed: () => _pushAction(index),
+            child: Card(
+              child: Center(
+                child: Text(demoList[index]["title"]),
+              ),
+            ),
+          );
         },
       ),
     );
@@ -51,7 +53,6 @@ class _MainPageState extends State<MainPage> {
 
   void _pushAction(int index) {
     var routeName = demoList[index]["route"];
-    // print(demoList);
     Navigator.pushNamed(context, routeName);
   }
 }

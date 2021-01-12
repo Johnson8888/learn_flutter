@@ -38,6 +38,8 @@ class MyApp extends StatelessWidget {
         "ContainerDemoPage": (context) => ContainerDemoPage(),
         "StatefulWidgetDemoPage": (context) => StatefulWidgetDemoPage(),
         "TextFieldDemoPage": (context) => TextFieldDemoPage(),
+        "ImageDemoPage": (context) => ImageDemoPage(),
+        "ColumnDemoPage": (context) => ColumnDemoPage(),
       },
     );
   }
