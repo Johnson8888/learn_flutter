@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2021-01-12 08:32:59
- * @LastEditTime: 2021-01-12 14:16:17
+ * @LastEditTime: 2021-01-12 17:37:08
  * @Support: http://fulade.me
  */
 
@@ -17,7 +17,7 @@ class ColumnCrossAxisalignmentDemoPage extends StatefulWidget {
 class _ColumnCrossAxisalignmentDemoPageState
     extends State<ColumnCrossAxisalignmentDemoPage> {
   var alignment = CrossAxisAlignment.start;
-  var title = "CrossAxisAlignment.center";
+  var title = "CrossAxisAlignment.start";
 
   @override
   Widget build(BuildContext context) {

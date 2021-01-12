@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2021-01-12 08:32:59
- * @LastEditTime: 2021-01-12 14:27:49
+ * @LastEditTime: 2021-01-12 17:37:31
  * @Support: http://fulade.me
  */
 
@@ -17,7 +17,7 @@ class ColumnMainAxisalignmentDemoPage extends StatefulWidget {
 class _ColumnMainAxisalignmentDemoPageState
     extends State<ColumnMainAxisalignmentDemoPage> {
   var alignment = MainAxisAlignment.start;
-  var title = "MainAxisalignment.center";
+  var title = "MainAxisalignment.start";
 
   @override
   Widget build(BuildContext context) {
