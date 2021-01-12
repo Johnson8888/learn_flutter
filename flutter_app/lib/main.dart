@@ -40,6 +40,7 @@ class MyApp extends StatelessWidget {
         "TextFieldDemoPage": (context) => TextFieldDemoPage(),
         "ImageDemoPage": (context) => ImageDemoPage(),
         "ColumnDemoPage": (context) => ColumnDemoPage(),
+        "RowDemoPage": (context) => RowDemoPage()
       },
     );
   }

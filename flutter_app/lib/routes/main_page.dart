@@ -23,7 +23,8 @@ class _MainPageState extends State<MainPage> {
     {"title": "StatefulWidget", "route": "StatefulWidgetDemoPage"},
     {"title": "TextField", "route": "TextFieldDemoPage"},
     {"title": "Image", "route": "ImageDemoPage"},
-    {"title": "Colum", "route": "ColumnDemoPage"}
+    {"title": "Colum", "route": "ColumnDemoPage"},
+    {"title": "Row", "route": "RowDemoPage"}
   ];
   @override
   Widget build(BuildContext context) {
