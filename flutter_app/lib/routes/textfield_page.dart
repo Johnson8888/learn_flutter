@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-01-07 13:31:11
- * @LastEditTime: 2021-01-08 10:50:19
+ * @LastEditTime: 2021-01-08 14:24:39
  * @Support: http://fulade.me
  */
 
@@ -23,7 +23,7 @@ class _TextFieldDemoPageState extends State<TextFieldDemoPage> {
       ),
       body: ListView.builder(
         itemCount: 12,
-        itemExtent: 60.0, //强制高度为60.0
+        itemExtent: 70.0, //强制高度为60.0
         padding: EdgeInsets.all(10),
         itemBuilder: (BuildContext context, int index) {
           return _createTextFieldList()[index];

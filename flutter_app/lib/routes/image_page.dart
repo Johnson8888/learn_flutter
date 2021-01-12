@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-01-10 10:31:11
- * @LastEditTime: 2021-01-10 10:50:19
+ * @LastEditTime: 2021-01-11 13:28:32
  * @Support: http://fulade.me
  */
 
@@ -75,8 +75,8 @@ class _ImageDemoPageState extends State<ImageDemoPage> {
         "BoxFit.contain",
         textAlign: TextAlign.center,
       ),
-      Image.network(
-        "https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg",
+      Image.asset(
+        "images/page_conver_flutter_blue.jpeg",
         height: 100,
         alignment: Alignment.bottomCenter,
         fit: BoxFit.contain,
@@ -85,8 +85,8 @@ class _ImageDemoPageState extends State<ImageDemoPage> {
         "BoxFit.fill",
         textAlign: TextAlign.center,
       ),
-      Image.network(
-        "https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg",
+      Image.asset(
+        "images/page_conver_flutter_blue.jpeg",
         height: 100,
         alignment: Alignment.bottomCenter,
         fit: BoxFit.fill,
@@ -95,8 +95,8 @@ class _ImageDemoPageState extends State<ImageDemoPage> {
         "BoxFit.cover",
         textAlign: TextAlign.center,
       ),
-      Image.network(
-        "https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg",
+      Image.asset(
+        "images/page_conver_flutter_blue.jpeg",
         height: 100,
         alignment: Alignment.bottomCenter,
         fit: BoxFit.cover,
@@ -105,8 +105,8 @@ class _ImageDemoPageState extends State<ImageDemoPage> {
         "BoxFit.fitWidth",
         textAlign: TextAlign.center,
       ),
-      Image.network(
-        "https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg",
+      Image.asset(
+        "images/page_conver_flutter_blue.jpeg",
         height: 100,
         alignment: Alignment.bottomCenter,
         fit: BoxFit.fitWidth,
@@ -115,8 +115,8 @@ class _ImageDemoPageState extends State<ImageDemoPage> {
         "BoxFit.fitHeight",
         textAlign: TextAlign.center,
       ),
-      Image.network(
-        "https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg",
+      Image.asset(
+        "images/page_conver_flutter_blue.jpeg",
         height: 100,
         alignment: Alignment.bottomCenter,
         fit: BoxFit.fitHeight,
@@ -125,8 +125,8 @@ class _ImageDemoPageState extends State<ImageDemoPage> {
         "BoxFit.none",
         textAlign: TextAlign.center,
       ),
-      Image.network(
-        "https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg",
+      Image.asset(
+        "images/page_conver_flutter_blue.jpeg",
         height: 100,
         alignment: Alignment.bottomCenter,
         fit: BoxFit.none,
@@ -135,8 +135,8 @@ class _ImageDemoPageState extends State<ImageDemoPage> {
         "BoxFit.scaleDown",
         textAlign: TextAlign.center,
       ),
-      Image.network(
-        "https://cdn.jsdelivr.net/gh/johnson8888/blog_pages/images/page_conver_flutter_blue.jpeg",
+      Image.asset(
+        "images/page_conver_flutter_blue.jpeg",
         height: 100,
         alignment: Alignment.bottomCenter,
         fit: BoxFit.scaleDown,
