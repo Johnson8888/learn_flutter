@@ -49,10 +49,7 @@ flutter:
   assets:
     - images/flutter_icon_100.png
     - images/image_demo.jpg
-<<<<<<< HEAD
-=======
     - images/page_conver_flutter_blue.jpeg
->>>>>>> 84373350a64218b6a703b66941b06fc7fb3cf210
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
