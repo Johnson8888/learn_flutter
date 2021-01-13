@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2021-01-12 08:32:59
- * @LastEditTime: 2021-01-13 10:21:22
+ * @LastEditTime: 2021-01-13 11:45:25
  * @Support: http://fulade.me
  */
 
@@ -106,7 +106,7 @@ class _RowCrossAxisalignmentDemoPageState
         child: Row(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: alignment,
-          textBaseline: TextBaseline.alphabetic,
+          textBaseline: TextBaseline.ideographic,
           children: List<Widget>.generate(
             4,
             (i) => Container(

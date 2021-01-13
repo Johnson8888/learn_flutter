@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2021-01-12 08:32:59
- * @LastEditTime: 2021-01-13 10:33:38
+ * @LastEditTime: 2021-01-13 13:36:32
  * @Support: http://fulade.me
  */
 
@@ -26,6 +26,19 @@ class _RowVerticalDirectionDemoPageState
       floatingActionButton: SpeedDial(
         child: Icon(Icons.change_history),
         children: [
+          SpeedDialChild(
+            child: Icon(Icons.change_history),
+            backgroundColor: Colors.green,
+            label: 'up & end',
+            labelStyle: TextStyle(fontSize: 18.0),
+            onTap: () {
+              setState(() {
+                title = "up & end";
+                verticalDirection = VerticalDirection.up;
+                alignment = CrossAxisAlignment.end;
+              });
+            },
+          ),
           SpeedDialChild(
             child: Icon(Icons.change_history),
             backgroundColor: Colors.green,
@@ -55,19 +68,6 @@ class _RowVerticalDirectionDemoPageState
           SpeedDialChild(
             child: Icon(Icons.change_history),
             backgroundColor: Colors.green,
-            label: 'up & end',
-            labelStyle: TextStyle(fontSize: 18.0),
-            onTap: () {
-              setState(() {
-                title = "up & end";
-                verticalDirection = VerticalDirection.up;
-                alignment = CrossAxisAlignment.end;
-              });
-            },
-          ),
-          SpeedDialChild(
-            child: Icon(Icons.change_history),
-            backgroundColor: Colors.green,
             label: 'down & start',
             labelStyle: TextStyle(fontSize: 18.0),
             onTap: () {
@@ -88,33 +88,33 @@ class _RowVerticalDirectionDemoPageState
         ),
         backgroundColor: Colors.blue,
       ),
-      body: Center(
-        child: Container(
-          height: 120,
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.red,
-              width: 1.0,
-            ),
+      body: Container(
+        height: 120,
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.red,
+            width: 1.0,
           ),
-          child: Row(
-            mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment: alignment,
-            verticalDirection: verticalDirection,
-            children: List<Widget>.generate(
-              4,
-              (i) => Container(
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.green,
-                    width: 1.0,
-                  ),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: alignment,
+          verticalDirection: verticalDirection,
+          children: List<Widget>.generate(
+            4,
+            (i) => Container(
+              width: 50,
+              height: 50,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.green,
+                  width: 1.0,
                 ),
-                child: Image.asset(
-                  "images/image_demo.jpg",
-                  width: 50,
-                  height: 50,
-                ),
+              ),
+              child: Image.asset(
+                "images/image_demo.jpg",
+                width: 50,
+                height: 50,
               ),
             ),
           ),

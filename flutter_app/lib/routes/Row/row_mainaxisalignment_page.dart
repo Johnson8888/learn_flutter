@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2021-01-12 08:32:59
- * @LastEditTime: 2021-01-13 10:10:28
+ * @LastEditTime: 2021-01-13 11:44:05
  * @Support: http://fulade.me
  */
 
@@ -106,6 +106,7 @@ class _RowMainAxisalignmentDemoPageState
         backgroundColor: Colors.blue,
       ),
       body: Container(
+        height: 100,
         decoration: BoxDecoration(
             border: Border.all(
           color: Colors.red,

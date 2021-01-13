@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2021-01-12 08:32:59
- * @LastEditTime: 2021-01-13 10:23:51
+ * @LastEditTime: 2021-01-13 11:49:21
  * @Support: http://fulade.me
  */
 
@@ -85,33 +85,31 @@ class _RowTextDirectionDemoPageState extends State<RowTextDirectionDemoPage> {
         ),
         backgroundColor: Colors.blue,
       ),
-      body: Center(
-        child: Container(
-          height: 120,
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.red,
-              width: 1.0,
-            ),
+      body: Container(
+        height: 120,
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.red,
+            width: 1.0,
           ),
-          child: Row(
-            mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment: alignment,
-            textDirection: textDirection,
-            children: List<Widget>.generate(
-              4,
-              (i) => Container(
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.green,
-                    width: 1.0,
-                  ),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: alignment,
+          textDirection: textDirection,
+          children: List<Widget>.generate(
+            4,
+            (i) => Container(
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.green,
+                  width: 1.0,
                 ),
-                child: Image.asset(
-                  "images/image_demo.jpg",
-                  width: 50,
-                  height: 50,
-                ),
+              ),
+              child: Image.asset(
+                "images/image_demo.jpg",
+                width: 50,
+                height: 50,
               ),
             ),
           ),
