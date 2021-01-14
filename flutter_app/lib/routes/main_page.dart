@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-12-15 20:51:56
- * @LastEditTime: 2021-01-12 10:50:00
+ * @LastEditTime: 2021-01-13 19:34:59
  * @Support: http://fulade.me
  */
 
@@ -24,7 +24,8 @@ class _MainPageState extends State<MainPage> {
     {"title": "TextField", "route": "TextFieldDemoPage"},
     {"title": "Image", "route": "ImageDemoPage"},
     {"title": "Colum", "route": "ColumnDemoPage"},
-    {"title": "Row", "route": "RowDemoPage"}
+    {"title": "Row", "route": "RowDemoPage"},
+    {"title": "Flexible", "route": "FlexibleDemoPage"}
   ];
   @override
   Widget build(BuildContext context) {
