@@ -41,7 +41,8 @@ class MyApp extends StatelessWidget {
         "ImageDemoPage": (context) => ImageDemoPage(),
         "ColumnDemoPage": (context) => ColumnDemoPage(),
         "RowDemoPage": (context) => RowDemoPage(),
-        "FlexibleDemoPage": (context) => FlexibleDemoPage()
+        "FlexibleDemoPage": (context) => FlexibleDemoPage(),
+        "WrapDemoPage": (context) => WrapDemoPage(),
       },
     );
   }
