@@ -43,6 +43,7 @@ class MyApp extends StatelessWidget {
         "RowDemoPage": (context) => RowDemoPage(),
         "FlexibleDemoPage": (context) => FlexibleDemoPage(),
         "WrapDemoPage": (context) => WrapDemoPage(),
+        "ListViewDemoPage": (context) => ListViewDemoPage(),
       },
     );
   }
