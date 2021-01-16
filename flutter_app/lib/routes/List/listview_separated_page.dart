@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2021-01-16 11:46:15
- * @LastEditTime: 2021-01-16 12:03:15
+ * @LastEditTime: 2021-01-16 13:02:51
  * @Support: http://fulade.me
  */
 
@@ -15,7 +15,7 @@ class ListViewSeparatedDemoPage extends StatefulWidget {
 }
 
 class _ListViewSeparatedDemoPageState extends State<ListViewSeparatedDemoPage> {
-  var title = "height 10";
+  var title = "height 0";
   var divider = Divider(height: .0);
   @override
   Widget build(BuildContext context) {
