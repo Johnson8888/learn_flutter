@@ -45,6 +45,8 @@ class MyApp extends StatelessWidget {
         "WrapDemoPage": (context) => WrapDemoPage(),
         "ListViewDemoPage": (context) => ListViewDemoPage(),
         "GridViewDemoPage": (context) => GridViewDemoPage(),
+        "BottomNavigationBarDemoPage": (context) =>
+            BottomNavigationBarDemoPage(),
       },
     );
   }
