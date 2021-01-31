@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-12-15 20:51:56
- * @LastEditTime: 2021-01-28 20:40:46
+ * @LastEditTime: 2021-01-31 21:11:51
  * @Support: http://fulade.me
  */
 
@@ -29,7 +29,8 @@ class _MainPageState extends State<MainPage> {
     {"title": "Wrap", "route": "WrapDemoPage"},
     {"title": "ListView", "route": "ListViewDemoPage"},
     {"title": "GridView", "route": "GridViewDemoPage"},
-    {"title": "BottomNavigationBar", "route": "BottomNavigationBarDemoPage"}
+    {"title": "BottomNavigationBar", "route": "BottomNavigationBarDemoPage"},
+    {"title": "RouterDemoPage", "route": "RouterDemoPage"},
   ];
   @override
   Widget build(BuildContext context) {

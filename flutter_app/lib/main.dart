@@ -47,6 +47,8 @@ class MyApp extends StatelessWidget {
         "GridViewDemoPage": (context) => GridViewDemoPage(),
         "BottomNavigationBarDemoPage": (context) =>
             BottomNavigationBarDemoPage(),
+        "RouterDemoPage": (context) => RouterDemoPage(),
+        "RouterDemoPage2": (context) => RouterDemoPage2(),
       },
     );
   }
