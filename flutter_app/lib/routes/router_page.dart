@@ -1,10 +1,11 @@
 /*
  * @Author: 弗拉德
  * @Date: 2021-01-31 20:58:07
- * @LastEditTime: 2021-01-31 21:48:42
+ * @LastEditTime: 2021-02-01 15:34:04
  * @Support: http://fulade.me
  */
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 class RouterDemoPage extends StatefulWidget {
   @override
@@ -41,8 +42,13 @@ class _RouterDemoPageState extends State<RouterDemoPage> {
             height: 50,
             child: FlatButton(
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(builder: context) {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
                   return RouterDemoPage3(passText: "Fulade");
+                })).then((value) {
+                  setState(() {
+                    title = value;
+                  });
                 });
               },
               child: Card(
@@ -79,23 +85,33 @@ class _RouterDemoPage2State extends State<RouterDemoPage2> {
 }
 
 class RouterDemoPage3 extends StatefulWidget {
-    final String passText;
-  RouterDemoPage3({Key key,@required this.passText});
+  final String passText;
+  RouterDemoPage3({Key key, @required this.passText});
   @override
-  _RouterDemoPage2State createState() => _RouterDemoPage2State();
+  _RouterDemoPage3State createState() => _RouterDemoPage3State();
 }
 
-class _RouterDemoPage3State extends State<RouterDemoPage2> {
+class _RouterDemoPage3State extends State<RouterDemoPage3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("RouterDemoPage 3"),
+        title: Text("value: " + widget.passText),
       ),
       body: Container(
-        child: Text("Text"),
+        child: Text("传过来的值为: " + widget.passText),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context, _randomValue());
+        },
+        child: Text("返回"),
       ),
     );
+  }
+
+  String _randomValue() {
+    return "返回值为 " + DateTime.now().millisecondsSinceEpoch.toString();
   }
 }
