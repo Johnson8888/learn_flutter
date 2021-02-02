@@ -49,6 +49,7 @@ class MyApp extends StatelessWidget {
             BottomNavigationBarDemoPage(),
         "RouterDemoPage": (context) => RouterDemoPage(),
         "RouterDemoPage2": (context) => RouterDemoPage2(),
+        "HttpRequestDemoPage": (context) => HttpRequestDemoPage(),
       },
     );
   }

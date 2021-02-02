@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-12-15 20:54:29
- * @LastEditTime: 2021-01-31 21:15:44
+ * @LastEditTime: 2021-02-02 11:35:51
  * @Support: http://fulade.me
  */
 export 'main_page.dart';
@@ -22,3 +22,4 @@ export 'listview_page.dart';
 export 'gridview_page.dart';
 export 'bottom_navigation_page.dart';
 export 'router_page.dart';
+export 'http_request_page.dart';

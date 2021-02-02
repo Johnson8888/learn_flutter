@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-12-15 20:51:56
- * @LastEditTime: 2021-01-31 21:11:51
+ * @LastEditTime: 2021-02-02 11:43:30
  * @Support: http://fulade.me
  */
 
@@ -31,6 +31,7 @@ class _MainPageState extends State<MainPage> {
     {"title": "GridView", "route": "GridViewDemoPage"},
     {"title": "BottomNavigationBar", "route": "BottomNavigationBarDemoPage"},
     {"title": "RouterDemoPage", "route": "RouterDemoPage"},
+    {"title": "HttpDemoPage", "route": "HttpRequestDemoPage"}
   ];
   @override
   Widget build(BuildContext context) {
