@@ -1,0 +1,59 @@
+[
+	{
+		"id": "snow_wind.jpg",
+		"cover": "snow_wind.jpg",
+		"title":"风吹雪",
+		"detail":"",
+		"soundfile": "snow_wind.mp3",
+		"duration":384
+	},
+	{
+		"id": "packed_snow",
+		"cover": "packed_snow.jpg",
+		"title":"踩雪",
+		"detail":"",
+		"soundfile": "packed_snow.mp3",
+		"duration":384
+	},
+	{
+		"id": "fireplace",
+		"cover": "fireplace.jpg",
+		"title":"壁炉篝火",
+		"detail":"",
+		"soundfile": "fireplace.mp3",
+		"duration":384
+	},
+	{
+		"id": "winter_sea_mew",
+		"cover": "winter_sea_mew.jpg",
+		"title":"海滨冬日",
+		"detail":"",
+		"soundfile": "winter_sea_mew.mp3",
+		"duration":384
+	},
+	{
+		"id": "snowing",
+		"cover": "snowing.jpg",
+		"title":"下雪",
+		"detail":"",
+		"soundfile": "snowing.mp3",
+		"duration":384
+	},
+	{
+		"id": "snow_walking",
+		"cover": "snow_walking.jpg",
+		"title":"雪中前行",
+		"detail":"",
+		"soundfile": "snow_walking.mp3",
+		"duration":384
+	},
+	{
+		"id": "wind_snowing",
+		"cover": "wind_snowing.jpg",
+		"title":"风雪",
+		"detail":"",
+		"soundfile": "wind_snowing.mp3",
+		"duration":384
+	}
+	
+]
