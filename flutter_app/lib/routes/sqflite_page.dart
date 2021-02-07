@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2021-02-07 09:55:00
- * @LastEditTime: 2021-02-07 16:16:06
+ * @LastEditTime: 2021-02-07 17:32:42
  * @Support: http://fulade.me
  */
 import 'dart:math';
@@ -24,9 +24,15 @@ class _SqfliteDemoPageState extends State<SqfliteDemoPage> {
   int lastInsertDataId = null;
 
   @override
-  void initState() {
+  Future<void> initState() {
     super.initState();
-    SqfliteManager.getInstance();
+    SqfliteManager.getInstance().then((dataBase) {
+      dataBase.queryData().then((value) {
+        setState(() {
+          dataList = value;
+        });
+      });
+    });
   }
 
   @override
@@ -92,12 +98,38 @@ class _SqfliteDemoPageState extends State<SqfliteDemoPage> {
                     ),
                   ),
                 ),
+                Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.all(5),
+                    child: RaisedButton(
+                      onPressed: () {
+                        _updateLastData();
+                        _getAllData();
+                      },
+                      child: Text("Update"),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
         ],
       ),
     );
+  }
+
+  /// 在json数据内 随机取一个数据 更新到最后一条数据内
+  Future<void> _updateLastData() async {
+    String jsonString = await rootBundle.loadString("json/musicList.json");
+    List musicList = json.decode(jsonString);
+
+    /// 随机取一个下标
+    int index = Random().nextInt(musicList.length) - 1;
+    Map updateData = musicList[index];
+    updateData.remove("id");
+    int result = await SqfliteManager.getInstance()
+        .then((dataBase) => dataBase.updateData(updateData, lastInsertDataId));
+    print("update result = $result");
   }
 
   Future<void> _deleteLastData() async {
@@ -188,12 +220,22 @@ class SqfliteManager {
     return await db.query(tableName);
   }
 
-  /// 删除一个相册
+  /// 删除一条数据
   Future<int> deleteData(int id) async {
     if (id == null || id == 0) {
       return 0;
     }
     return await db.delete(tableName, where: "id = ?", whereArgs: [id]);
+  }
+
+  /// 更新数据
+  Future<int> updateData(Map<String, dynamic> value, int id) async {
+    return await db.update(
+      tableName,
+      value,
+      where: "id = ?",
+      whereArgs: [id],
+    );
   }
 
   /// 判断是否存在 数据库表
