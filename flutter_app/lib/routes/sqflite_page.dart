@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2021-02-07 09:55:00
- * @LastEditTime: 2021-02-07 16:09:02
+ * @LastEditTime: 2021-02-07 16:16:06
  * @Support: http://fulade.me
  */
 import 'dart:math';
@@ -26,7 +26,7 @@ class _SqfliteDemoPageState extends State<SqfliteDemoPage> {
   @override
   void initState() {
     super.initState();
-    SqfilteManager.getInstance();
+    SqfliteManager.getInstance();
   }
 
   @override
@@ -101,13 +101,13 @@ class _SqfliteDemoPageState extends State<SqfliteDemoPage> {
   }
 
   Future<void> _deleteLastData() async {
-    int result = await SqfilteManager.getInstance()
+    int result = await SqfliteManager.getInstance()
         .then((dataBase) => dataBase.deleteData(lastInsertDataId));
     print("delete result = $result");
   }
 
   Future<void> _getAllData() async {
-    List tmpList = await SqfilteManager.getInstance()
+    List tmpList = await SqfliteManager.getInstance()
         .then((dataBase) => dataBase.queryData());
     lastInsertDataId = tmpList.last["id"];
     print("lastInsertDataId = $lastInsertDataId");
@@ -124,19 +124,19 @@ class _SqfliteDemoPageState extends State<SqfliteDemoPage> {
     /// 随机取一个下标
     int index = Random().nextInt(musicList.length) - 1;
     Map insertData = musicList[index];
-    int result = await SqfilteManager.getInstance()
+    int result = await SqfliteManager.getInstance()
         .then((database) => database.insertData(insertData));
     print("insert id = $result");
   }
 }
 
 /// 用来 管理数据库的类
-class SqfilteManager {
+class SqfliteManager {
   //// sql 文件的名字
   static final sqlName = "db.sqlite";
   static final tableName = "musicList";
   Database db;
-  static SqfilteManager _instance;
+  static SqfliteManager _instance;
 
   /// 创建table 的 sql语句
   static var CREATE_DATA_TABLE = '''
@@ -149,7 +149,7 @@ class SqfilteManager {
         duration integer)
         ''';
 
-  static Future<SqfilteManager> getInstance() async {
+  static Future<SqfliteManager> getInstance() async {
     if (_instance == null) {
       _instance = await _initDataBase();
     }
@@ -157,8 +157,8 @@ class SqfilteManager {
   }
 
   /// 打开 数据库 db
-  static Future<SqfilteManager> _initDataBase() async {
-    SqfilteManager manager = SqfilteManager();
+  static Future<SqfliteManager> _initDataBase() async {
+    SqfliteManager manager = SqfliteManager();
     String dbPath = await getDatabasesPath() + "/$sqlName";
     print("dbPath = $dbPath");
     if (manager.db == null) {
