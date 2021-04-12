@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2020-12-15 20:51:56
- * @LastEditTime: 2021-02-07 09:58:12
+ * @LastEditTime: 2021-04-12 16:31:35
  * @Support: http://fulade.me
  */
 
@@ -30,9 +30,10 @@ class _MainPageState extends State<MainPage> {
     {"title": "ListView", "route": "ListViewDemoPage"},
     {"title": "GridView", "route": "GridViewDemoPage"},
     {"title": "BottomNavigationBar", "route": "BottomNavigationBarDemoPage"},
-    {"title": "RouterDemoPage", "route": "RouterDemoPage"},
-    {"title": "HttpDemoPage", "route": "HttpRequestDemoPage"},
-    {"title": "SqfliteDemoPage", "route": "SqfliteDemoPage"},
+    {"title": "Router路由跳转", "route": "RouterDemoPage"},
+    {"title": "Http请求", "route": "HttpRequestDemoPage"},
+    {"title": "Sqflite数据库", "route": "SqfliteDemoPage"},
+    {"title": "Lottie动画", "route": "LottieDemoPage"},
   ];
   @override
   Widget build(BuildContext context) {

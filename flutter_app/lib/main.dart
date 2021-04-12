@@ -51,6 +51,7 @@ class MyApp extends StatelessWidget {
         "RouterDemoPage2": (context) => RouterDemoPage2(),
         "HttpRequestDemoPage": (context) => HttpRequestDemoPage(),
         "SqfliteDemoPage": (context) => SqfliteDemoPage(),
+        "LottieDemoPage": (context) => LottieAnimateDemoPage(),
       },
     );
   }

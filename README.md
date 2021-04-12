@@ -5,6 +5,7 @@
 [《自学Fltter》教程代码](http://fulade.me/categories/Flutter/)  
 
 
+
 ### **Flutter系列**
 [Flutter的8优势以及为什么要在下一个项目中尝试Flutter](http://fulade.me/why-flutter-1-1.html)  
 ##### **Flutter安装与运行**  
@@ -41,10 +42,14 @@
 [【Flutter 2-12】Flutter手把手教程UI布局和Widget——网格列表GridView](http://fulade.me/flutter-ui-gridview-widget-2-12.html)
 
 
-
-
 ##### **Flutter 进阶 基础**
 [【Flutter 3-1】Flutter进阶教程——底部导航栏BottomNavigationBar使用](http://fulade.me/flutter-high-bottomnavigationbar-widget-3-1.html)
 [【Flutter 3-2】Flutter进阶教程——路由Router和导航Navigator以及传值](http://fulade.me/flutter-high-router-widget-3-2.html)
 [【Flutter 3-3】Flutter进阶教程——http请求和FutureBuilder](http://fulade.me/flutter-high-request-3-3.html)
 [【Flutter 3-4】Flutter进阶教程——数据持久化sqflite使用](http://fulade.me/flutter-high-sqflite-3-4.html)
+
+
+
+--- 
+> 基于Flutter版本：
+[✓] Flutter (Channel stable, 1.22.6, on Mac OS X 10.15.5 19F101 darwin-x64, locale zh-Hans-CN)
