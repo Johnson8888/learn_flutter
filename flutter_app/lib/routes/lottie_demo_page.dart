@@ -1,7 +1,7 @@
 /*
  * @Author: 弗拉德
  * @Date: 2021-04-12 14:40:45
- * @LastEditTime: 2021-04-12 16:31:01
+ * @LastEditTime: 2021-04-13 10:48:05
  * @Support: http://fulade.me
  */
 
@@ -54,7 +54,7 @@ class _LottieAnimateDemoPageState extends State<LottieAnimateDemoPage> {
         ),
       ),
       Text(
-        "repeat:false",
+        "reverse:true",
         textAlign: TextAlign.center,
       ),
       Container(
